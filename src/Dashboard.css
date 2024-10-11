@@ -1,0 +1,78 @@
+/* Basic styles for the dashboard */
+.dashboard-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .navbar h2 {
+    margin: 0;
+  }
+  
+  .help-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .help-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .dashboard-main {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .dashboard-left, .dashboard-right {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .card {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  
+  .card h3 {
+    margin-top: 0;
+  }
+  
+  .card ul {
+    padding-left: 20px;
+  }
+  
+  .upgrade-button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .upgrade-button:hover {
+    background-color: #218838;
+  }
+  
+  /* Basic responsive behavior */
+  @media (max-width: 768px) {
+    .dashboard-main {
+      flex-direction: column;
+    }
+  
+    .dashboard-left, .dashboard-right {
+      margin-right: 0;
+    }
+  }
+  
